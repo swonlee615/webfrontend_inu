@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>button 구현</title>
+    <style>
+        .id-alert-box {
+            background-color: aqua;
+            padding: 20px;
+            border-radius: 5px;
+            display: none;
+        }
+        .pw-alert-box {
+            background-color: blue;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            display: none; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="id-alert-box" id="alert-id">
+        <span>아이디를 입력하세요</span>
+    </div>
+    <div class="pw-alert-box" id="alert-pw">
+        <span>비밀번호를 입력하세요</span>
+    </div>
+    <button onclick="id_alertbox()">버튼 1</button>
+    <button onclick="pw_alertbox()" >버튼 2</button>
+
+
+    <script>
+        function id_alertbox () {
+            document.getElementById('alert-pw').style.display= 'none'
+            document.getElementById('alert-id').style.display= 'block'
+        }
+        function pw_alertbox () {
+            document.getElementById('alert-id').style.display= 'none'
+            document.getElementById('alert-pw').style.display= 'block'
+        }
+    </script>
+    <!-- 버튼 2개를 만들어놓고
+
+    버튼1과 버튼2를 누르면 각각 다른 이름의 alert 박스가 나오도록 코드를 짜봅시다.
+    - 버튼1을 누르면 '아이디를 입력하세요' 라는 alert 박스가 등장해야합니다.
+    - 버튼2를 누르면 '비밀번호를 입력하세요' 라는 alert 박스가 등장해야합니다.  -->
+</body>
+</html>

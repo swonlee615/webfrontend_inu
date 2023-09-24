@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>javascript</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .alert-box{
+            background-color: rgb(41, 180, 226);
+            padding: 20px;
+            color: white;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="alert-box" id="alert">
+        <span>알림창임</span>
+        <button onclick="openClose('none')">닫기</button>
+    </div>
+    <button onclick="openClose('block')">열기</button>
+
+    <script>
+        function openClose(a) {
+            document.getElementById('alert').style.display= a;
+        }
+    </script>
+</body>
+</html>
+
+<!-- 
+def hello():
+function hello() {
+    const
+    let
+    var
+} -->

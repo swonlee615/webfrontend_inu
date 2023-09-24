@@ -1,0 +1,29 @@
+.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+
+
+.main-text {
+    text-align: center;
+    font-size: 15px;
+}
+
+.container {
+    width: 300px; 
+    height: auto;
+    background-color: rgb(92, 127, 88); 
+    margin: auto;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: white;
+    /* box-shadow: 10px 10px gray; */
+    box-shadow: 0 0 5px 5px gray;
+}
